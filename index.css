@@ -1,0 +1,6 @@
+.btn-group__text::after {
+  content: url(assets/images/Arrow.png);
+}
+.btn-group__text_white::after {
+  content: url(assets/images/Arrow-white.png);
+}
