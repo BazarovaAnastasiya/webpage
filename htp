@@ -1,0 +1,24 @@
+  <section class="testimonials">
+    <h2 class="testimonials">Why clients <span>LOVE</span> us?</h2>
+    <div class="testimonials__slider-wrapper">
+      <div class="slider__conteiner">
+        <span class="conteiner__background-text">Sarah A</span>
+        <figure class="conteiner__quote">
+          <blockqute class="quoet-text">Smoothie is great. I don't know what else to say. I will let my mum know
+            about this, she could really make use of Smoothie! Smoothie saved my business.
+          </blockqute>
+          <figcaption> &mdash; <cit class="quoet-cit">from Santa Monica, CA</cit>
+          </figcaption>
+        </figure>
+        <img class="conteiner__picture" src=" assets/images/slider-img.png" alt="icon: slider picture">
+      </div>
+    </div>
+    <div class="testimonials__controller">
+      <a href="#" class="testimonials__slider-controller">
+        before
+      </a>
+      <a href="#" class="testimonials__slider-controller">
+        after
+      </a>
+    </div>
+  </section>
