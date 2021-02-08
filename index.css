@@ -1,6 +1,9 @@
-.btn-group__text::after {
+.btn-group::after {
   content: url(assets/images/Arrow.png);
 }
-.btn-group__text_white::after {
+.btn-group--white::after {
   content: url(assets/images/Arrow-white.png);
 }
+ .foter-top__form-button::before {
+    content: url(assets/images/Arrow.png);
+ }
