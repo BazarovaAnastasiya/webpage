@@ -7,3 +7,6 @@
  .foter-top__form-button::before {
     content: url(assets/images/Arrow.png);
  }
+.btn-group__text::after {
+  content: url(assets/images/Arrow.png);
+}
