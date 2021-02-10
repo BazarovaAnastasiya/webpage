@@ -11,15 +11,15 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header"><a id="header"></a>
     <div class="header-top">
       <nav class="header-top__menu menu">
         <a href="#" class="menu__link">Home</a>
-        <a href="#" class="menu__link">Shop</a>
-        <a href="#" class="menu__link">Story</a>
-        <a href="#" class="menu__link">About</a>
-        <a href="#" class="menu__link">Blog</a>
-        <a href="#" class="menu__link">Testim</a>
+        <a href="#Shop" class="menu__link">Shop</a>
+        <a href="#story" class="menu__link">Story</a>
+        <a href="#about" class="menu__link">About</a>
+        <a href="#blog" class="menu__link">Blog</a>
+        <a href="#testimonials" class="menu__link">Testimonials</a>
       </nav>
       <a href="#" class="logo header-top__logo">
         <img class="logo__image" src="assets/images/Logo.svg" alt="logo">
@@ -36,13 +36,13 @@
         </a>
       </div>
       <div class="header-top__social social-icons">
-        <a href="#" class="social-icons__link">
+        <a href="#" class="header-top__link social-icons__link">
           <img src="assets/images/Facebook.svg" alt="facebook" class="social-icons__imge">
         </a>
-        <a href="#" class="social-icons__link">
+        <a href="#" class="header-top__link social-icons__link">
           <img src="assets/images/Pinterest.svg" alt="pinterest" class="social-icons__imge">
         </a>
-        <a href="#" class="social-icons__link">
+        <a href="#" class="header-top__link social-icons__link">
           <img src="assets/images/Instagram.svg" alt="instagram" class="social-icons__imge">
         </a>
       </div>
@@ -95,28 +95,30 @@
     </div>
   </section>
 
-  <section class="about conteiner">
-    <div class="about__image">
-      <img class="about__image-img" src="assets/images/Img-about.png" alt="smoothie">
-    </div>
-    <div class="about__content content">
-      <h2 class="content__title title">What makes Smoothie an <span>awesome drink?</span>
-      </h2>
-      <ul class="content__list">
-        <li class="content__item"><span class="content__item--bold">Crunchy Puffs</span> Texture</li>
-        <li class="content__item"><span class="content__item--bold">100 Calories</span> per drink</li>
-        <li class="content__item">4g Plant Protein </li>
-        <li class="content__item">Good source of <span class="content__item--bold">Magnesium & Vitamin B6</span></li>
-        <li class="content__item"><span class="content__item--bold">No Sugar</span> in our Savory Flavors</li>
-        <li class="content__item"><span class="content__item--bold">Non-GMO, Vegan & Paleo</span></li>
-        <li class="content__item"><span class="content__item--bold">Gluten-Free & Grain-Free</span></li>
-        <li class="content__item"><span class="content__item--bold">Corn-Free & Soy-Free</span></li>
-      </ul>
-      <a class="content__btn btn-group btn-border" href="#">About Organic Smoothie</a>
+  <section class="about"> <a id="about"></a>
+    <div class="conteiner">
+      <div class="about__image">
+        <img class="about__image-img" src="assets/images/Img-about.png" alt="smoothie">
+      </div>
+      <div class="about__content content">
+        <h2 class="content__title title">What makes Smoothie an <span>awesome drink?</span>
+        </h2>
+        <ul class="content__list">
+          <li class="content__item"><span class="content__item--bold">Crunchy Puffs</span> Texture</li>
+          <li class="content__item"><span class="content__item--bold">100 Calories</span> per drink</li>
+          <li class="content__item">4g Plant Protein </li>
+          <li class="content__item">Good source of <span class="content__item--bold">Magnesium & Vitamin B6</span></li>
+          <li class="content__item"><span class="content__item--bold">No Sugar</span> in our Savory Flavors</li>
+          <li class="content__item"><span class="content__item--bold">Non-GMO, Vegan & Paleo</span></li>
+          <li class="content__item"><span class="content__item--bold">Gluten-Free & Grain-Free</span></li>
+          <li class="content__item"><span class="content__item--bold">Corn-Free & Soy-Free</span></li>
+        </ul>
+        <a class="content__btn btn-group btn-border" href="#">About Organic Smoothie</a>
+      </div>
     </div>
   </section>
 
-  <section class="products">
+  <section class="products"><a id="Shop"></a>
     <div class="products-card">
       <img class="products-card__img" src="assets/images/dark.png" alt="bootle Dark Chocolate">
       <h4 class="products-card__title">Dark Chocolate Smoothie</h4>
@@ -143,7 +145,7 @@
     </div>
   </section>
 
-  <section class="story">
+  <section class="story"> <a id="story"></a>
     <div class="conteiner">
       <div class="story-content">
         <h2 class="story-content__title title">Our story</h2>
@@ -161,7 +163,7 @@
     </div>
   </section>
 
-  <section class="testimonials">
+  <section class="testimonials"> <a id="testimonials"></a>
     <h2 class="testimonials__title title">Why clients <span class="testimonials__title--big">LOVE</span> us?</h2>
     <div class="testimonials-slider slider">
       <div class="quote slider__quote">
@@ -183,7 +185,7 @@
     </div>
   </section>
 
-  <section class="Blog">
+  <section class="Blog"> <a id="blog"></a>
     <div class="conteiner">
       <h2 class="blog__title title">Our blog</h2>
       <div class="blog-wrapper">
@@ -218,47 +220,46 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="logo footer-top__logo">
-        <img src="assets/images/Logo.svg" alt="images: logo" class="logo__image">
+        <img class="logo__image" src="assets/images/Logo.svg" alt="logo">
       </div>
-      <div class="footer__wrapper footer-top__information">
-        <h3 class="footer__wraper-title">Information</h3>
-        <ul class="footer__information-list">
-          <li><a href="#" class="footer__information-link">Search</a></li>
-          <li><a href="#" class="footer__information-link"> Contact us</a></li>
-          <li><a href="#" class="footer__information-link">Terms & Conditions</a></li>
-          <li><a href="#" class="footer__information-link">Privacy Policy</a></li>
+      <div class="footer-wrapper information">
+        <h3 class="footer-wrapper__title">Information</h3>
+        <ul class="information__list">
+          <li><a href="#" class="information__link">Search</a></li>
+          <li><a href="#" class="information__link"> Contact us</a></li>
+          <li><a href="#" class="information__link">Terms & Conditions</a></li>
+          <li><a href="#" class="information__link">Privacy Policy</a></li>
         </ul>
       </div>
-      <div class="footer__wrapper footer-top__payment">
-        <h3 class="footer__wrapper-title">Payment</h3>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
-        <a href=""><img class="footer__payment-icon" src="" alt=""></a>
+      <div class="footer-wrapper payment">
+        <h3 class="footer-wrapper__title">Payment</h3>
+        <a href=""><img class="payment__icon" src="assets/images/AMEX.png" alt="AMEX"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Apple-Pay.png" alt="Apple Pay"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Maestro.png" alt="Maestro"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Discover.png" alt="Discover"></a>
+        <a href=""><img class="payment__icon" src="assets/images/JCB.png" alt="JCB"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Mastercard.png" alt="Mastercard"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Paypal.png" alt="Paypal"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Shopify-Pay.png" alt="Shopify Pay"></a>
+        <a href=""><img class="payment__icon" src="assets/images/Visa.png" alt="Visa"></a>
       </div>
-      <div class="footer__wrapper footer-top__contact">
-        <h3 class="footer__wrapper-title">Don’t miss out!</h3>
+      <div class="footer-_wrapper contact">
+        <h3 class="footer-wrapper__title">Don’t miss out!</h3>
 
-        <form class="foter-top__form" action="#" method="post">
+        <form class="contact-form" action="#" method="post">
           <i class="fa fa-envelope icon"></i>
-          <input class="foter-top__form-input" type="email" name="email" placeholder="Subscribe to our newsletter">
-          <button class="foter-top__form-button" type="submit">Follow Us</button>
+          <input class="contact-form__input" type="email" name="email" placeholder="Subscribe to our newsletter">
+          <button class="contact-form__button" type="submit">Follow Us</button>
         </form>
 
-        <div class="footer-top__social social-icons">
-          <a href="#" class="footer-top__social-link social-icons__link">
+        <div class="contact-social social-icons">
+          <a href="#" class="contact-social__link social-icons__link">
             <img src="assets/images/Facebook.svg" alt="facebook" class="social-icons-imge">
           </a>
-          <a href="#" class="footer-top__social-link social-icons__link">
+          <a href="#" class="contact-social__link social-icons__link">
             <img src="assets/images/Pinterest.svg" alt="pinterest" class="social-icons-imge">
           </a>
-          <a href="#" class="footer-top__social-link social-icons__link">
+          <a href="#" class="contact-social__link social-icons__link">
             <img src="assets/images/Instagram.svg" alt="instagram" class="social-icons-imge">
           </a>
         </div>
@@ -266,6 +267,8 @@
     </div>
     </div>
     <div class="footer__bottom"><span>© 2020. All Rights Reserved.</span></div>
+    <a href="#header" class="butto-gotop">go top<img class="butto-gotop__arrow" src="assets/images/arrow-gotop.png"
+        alt="arrow go top"></a>
   </footer>
 </body>
 
