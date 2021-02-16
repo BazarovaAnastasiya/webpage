@@ -1,6 +1,6 @@
-* {
+--!* {
   border: 1px solid rgb(52, 255, 45);
-}
+}--
 body {
   width: 1920px;
   margin: 0 auto;
@@ -120,7 +120,9 @@ body {
 }
 
 .smoothie {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .smoothie__title {
   font-family: 'Muli';
@@ -129,7 +131,7 @@ body {
   line-height: 0.8;
   letter-spacing: -1px;
   color: #f7ae3b;
-  margin: 0 0 55px;
+  margin: 0 0 40px;
 }
 .smoothie__text {
   max-width: 915px;
@@ -137,9 +139,45 @@ body {
   line-height: 1.94;
   letter-spacing: normal;  
   text-align: center;
+  padding-bottom: 40px;
 }
 .text {
   font-family: 'Muli';
   color: #1e1e1e;
   margin: 0 auto;
+}
+.smoothie__features {
+  max-width: 1010px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.smoothie__feature {
+  flex-basis: 25%;
+  text-align: center;
+}
+.smoothie__feature:nth-child(-n+4) {
+  border-bottom: 2px solid #f6edde;
+}
+.smoothie__feature {
+  border-right: 2px solid #f6edde;
+}
+.smoothie__feature:nth-child(4) {
+  border-right: 0;
+}
+.smoothie__feature:last-child {
+  border-right: 0;
+}
+.smoothie__feature-image{
+  padding-top: 30px;
+  padding: 34px 37px 0px 0;
+}
+.smoothie__feature-title {
+  font-family: Muli;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+  color: #f2612d;
+  padding: 20px 0;
 }
