@@ -1,6 +1,6 @@
---!* {
+* {
   border: 1px solid rgb(52, 255, 45);
-}--
+}
 body {
   width: 1920px;
   margin: 0 auto;
@@ -115,7 +115,7 @@ body {
   padding: 18px 39px;
 }
 .btn::after{
-  content: url(/assets/images/arrow.png);
+  content: url(assets/images/arrow.png);
   padding-left: 55px;
 }
 
@@ -123,14 +123,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 107px;
 }
-.smoothie__title {
+.title {
   font-family: 'Muli';
   font-size: 50px;
   font-weight: 800;
   line-height: 0.8;
   letter-spacing: -1px;
   color: #f7ae3b;
+}
+.smoothie__title {
   margin: 0 0 40px;
 }
 .smoothie__text {
@@ -155,6 +158,9 @@ body {
 .smoothie__feature {
   flex-basis: 25%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 .smoothie__feature:nth-child(-n+4) {
   border-bottom: 2px solid #f6edde;
@@ -180,4 +186,70 @@ body {
   letter-spacing: -0.5px;
   color: #f2612d;
   padding: 20px 0;
+}
+
+.about {
+  display: flex;
+  background-color: #14826f;
+  align-items:center;
+}
+.about__img-wrapper {
+  width: 691px;
+  height: 818px;
+  flex-basis: 48%;
+  position: relative;
+}
+.about__img {
+  position: absolute;
+  top: 57px;
+  left: 132px;
+}
+.about__content {
+max-width: 600px;
+padding: 97px 0;
+}
+.about__list {
+  margin-bottom: 50px;
+}
+.about__title {
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+  margin-bottom: 58px;
+  padding: 0;
+}
+.about__title--green {
+  color: #cae941;
+  position: relative;
+}
+.about__title--green::after {
+  content: url(/assets/images/line.png);
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
+.about__item {
+  list-style: none;
+  font-family: Muli;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-bottom: 21px;
+}
+.about__item--bold{
+  font-weight:800;
+}
+.about__item::before {
+  content: url(/assets/images/items-img.png);
+  width: 18px;
+  margin-right: 19px;
+}
+.content__btn {
+  padding: 21px 39px 18px 29px;
+  border-radius: 30px;
+  border: solid 2px #f8b231;
+  background: transparent;
 }
