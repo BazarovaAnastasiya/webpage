@@ -1,12 +1,145 @@
-.btn-group::after {
-  content: url(assets/images/Arrow.png);
+* {
+  border: 1px solid rgb(52, 255, 45);
 }
-.btn-group--white::after {
-  content: url(assets/images/Arrow-white.png);
+body {
+  width: 1920px;
+  margin: 0 auto;
 }
- .foter-top__form-button::before {
-    content: url(assets/images/Arrow.png);
- }
-.btn-group__text::after {
-  content: url(assets/images/Arrow.png);
+.header {
+  height: 100vh;
+  background: url(assets/images/heder-bg.jpg) center;
+  background-size: cover;
+  margin-bottom: 98px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 69px;
+  position: relative;
+  margin-bottom: 105px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.header-menu__list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+.mein-menu__list-item {
+  margin-right: 35px;
+}
+.mein-menu__list-item:last-child {
+  margin-right: 0;
+}
+.mein-menu__link{
+  font-family: 'Muli';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__personal {
+  display: flex;
+}
+.header__user{
+  display: flex;
+  justify-content: end;
+  align-items:center;
+}
+.header__user::after {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 2px;
+  margin: 3px 41px 16px 33px;
+  background-color: #ffd68f;
+}
+.header__user-link:first-child {
+  margin-right: 47px;
+}
+.header__user-link:nth-child(2) {
+  margin-right: 45px;
+}
+.header__user-link:last-child{
+  position: relative;
+}
+.header__user-icon--span{
+  position: absolute;
+  top: -11px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  font-family: Muli;
+  font-size: 10px;
+}
+
+.header__social {
+  display: flex;
+  align-items: center
+}
+.header__social-link {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.header__social-icon{
+  background-color: #ffffff;
+  border-radius:50%;
+}
+.header__content {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  font-family: 'Muli';
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.67;
+  letter-spacing: -0.48px;
+  color: #ffffff;
+  border-radius: 35px;
+  background-color: #0aa566;
+}
+.header__btn {
+  padding: 18px 39px;
+}
+.btn::after{
+  content: url(/assets/images/arrow.png);
+  padding-left: 55px;
+}
+
+.smoothie {
+  text-align: center;
+}
+.smoothie__title {
+  font-family: 'Muli';
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -1px;
+  color: #f7ae3b;
+  margin: 0 0 55px;
+}
+.smoothie__text {
+  max-width: 915px;
+  font-size: 18px;
+  line-height: 1.94;
+  letter-spacing: normal;  
+  text-align: center;
+}
+.text {
+  font-family: 'Muli';
+  color: #1e1e1e;
+  margin: 0 auto;
 }
