@@ -262,7 +262,7 @@ padding: 58px 0 112px;
 
 .products {
   display: flex;
-  overflow: hidden;
+  overflow: overlay;
 }
 .products__product{
   flex-basis: 25%;
@@ -482,4 +482,45 @@ padding-top: 45px;
   font-weight: 800;
   font-style: italic;
   text-align: left;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  overflow: overlay;
+}
+.instagram__link {
+  display: flex;
+  align-items:center;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.67;
+  letter-spacing: -0.48px;
+  color: #0aa566;
+  margin-bottom: 45px;
+}
+.instagram__icon {
+  width: 26px;
+  margin-right: 12px;
+}
+.instagram__gallery {
+  display: flex;
+}
+
+.footer__top {
+  display: flex;
+  background-color:#f6ab3b;
+  padding: 80px 0 93px;
+}
+.footer__logo {
+  align-self: center;
+}
+.footer__title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.54;
+  letter-spacing: -0.52px;
+  text-align: left;
+  color: #ffffff;
 }
