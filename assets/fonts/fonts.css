@@ -30,7 +30,7 @@
 }
 @font-face {
   font-family: 'Muli';
-  src: url(assets/fonts/Muli-Semi-BoldItalic.ttf);
+  src: url(/assets/fonts/Muli-Semi-BoldItalic.ttf);
   font-weight: 600;
   font-style: italic;
 }
