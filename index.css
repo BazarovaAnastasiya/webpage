@@ -1,8 +1,10 @@
-
+* {
+  border: 1px solid #000;  
+  }
 
 body {
   max-width: 1920px;
-  margin: 0 auto;
+  margin: auto;
   font-family: 'Muli',
   'Roboto';
 }
@@ -159,15 +161,14 @@ body {
 .smoothie__features {
   max-width: 1010px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .smoothie__feature {
   flex-basis: 25%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items:center;
+  justify-content: space-between;
 }
 .smoothie__feature:nth-child(-n+4) {
   border-bottom: 2px solid #f6edde;
@@ -182,8 +183,8 @@ body {
   border-right: 0;
 }
 .smoothie__feature-image{
-  padding-top: 30px;
-  padding: 34px 37px 0;
+  padding-top: 40px;
+  margin-bottom: 20px;
 }
 .smoothie__feature-title {
   font-family: Muli;
@@ -192,7 +193,7 @@ body {
   line-height: 1.6;
   letter-spacing: -0.5px;
   color: #f2612d;
-  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .about {
@@ -351,11 +352,16 @@ padding: 58px 0 112px;
   position: relative;
 }
 
-.testimonials::after{
+.testimonials::before {
   content: "";
-  display: block;
-  background: url(assets/images/dots1.png);
+  display: inline-block;
+  background-image: url(assets/images/dots1.png);
+  background-size: cover;
   position: absolute;
+  top: -93px;
+  right: 38px;
+  width: 410px;
+  height: 301px;
 }
 .testimonials__title{
   margin-bottom: 118px;
@@ -510,11 +516,15 @@ padding-top: 45px;
 
 .footer__top {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color:#f6ab3b;
-  padding: 80px 0 93px;
+  padding: 70px 45px 50px;
 }
 .footer__logo {
   align-self: center;
+  padding-bottom: 53px;
+  margin-right: 128px;
 }
 .footer__title {
   font-size: 26px;
@@ -523,4 +533,123 @@ padding-top: 45px;
   letter-spacing: -0.52px;
   text-align: left;
   color: #ffffff;
+  margin-bottom: 25px;
+}
+.footer__list{
+  list-style: none;
+  padding-left: 0;
+}
+.information__link {
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.94;
+  letter-spacing: -0.36px;
+  text-align: left;
+  color: #6d450c;
+}
+.footer__payment-wrapper {
+  display: flex;
+  max-width: 250px;
+  flex-wrap: wrap;
+}
+.footer__payment-icon {
+  padding: 0 15px 18px 1px;
+  flex-basis: 20%;
+}
+.footer__contact {
+  position: relative;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__input {
+  width: 495px;
+  height: 60px;
+  padding: 21px 218px 20px 23px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.footer__input[placeholder] {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2.06;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: #6d450c;
+  padding-left: 65px;
+}
+label {
+  position: relative;
+}
+label::before {
+  content: "";
+  display: block;
+  background: url(assets/images/input-icon.png);
+  background-size:cover;
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 9;
+}
+.footer__button {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 2.22;
+  letter-spacing: -0.36px;
+  text-align: left;
+  color: #6d450c;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 19px 0;
+  width: 129px;
+  align-self: center;
+  position: relative;
+}
+.footer__button::before {
+  content: "";
+  background-image: url(assets/images/arrow-footer.png);
+  background-size: cover;
+  display: block;
+  width: 48px;
+  height: 43px;
+  position: absolute;
+  top: 8px;
+  left: -66px;
+}
+.footer__bottom {
+  background-color:#6c2c1c;
+  text-align: center;
+  font-size: 13px;
+  line-height: 2.69;
+  letter-spacing: 0.26px;
+  color: #af8a82;
+  position: relative;
+}
+.footer__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: -0.32px;
+  color: #fff;
+}
+.footer__btn-arrow {
+  padding: 14px 19px 11px 18px;
+  border-radius: 5px;
+  background-color: #f2662f;
+  }
+
+.footer__social {
+  position: absolute;
+  right: 23px;
+  bottom: 37px;
+}
+.footer__social-link {
+  margin-right: 20px;
 }
