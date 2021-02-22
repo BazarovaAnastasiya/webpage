@@ -7,10 +7,8 @@ a:hover {
 }
 
 body {
-  max-width: 1920px;
   margin: auto;
-  font-family: 'Muli',
-  'Roboto';
+  font-family: 'Muli', 'Roboto';
 }
 .header {
   height: 100vh;
@@ -23,11 +21,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 69px;
+  padding: 69px 100px 0;
   position: relative;
   margin-bottom: 105px;
-  margin-right: 100px;
-  margin-left: 100px;
 }
 .header-menu__list {
   display: flex;
@@ -154,14 +150,11 @@ body {
 }
 .text {
   color: #1e1e1e;
-  margin: 0 auto;
   font-size: 18px;
   line-height: 1.94;
-  letter-spacing: normal;
 }
 
 .smoothie__features {
-  max-width: 1010px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -264,7 +257,8 @@ max-width: 650px;
 
 .products {
   display: flex;
-  overflow: overlay;
+  overflow-x: auto;
+  width: 100%;
 }
 .products__product{
   flex-basis: 25%;
@@ -376,7 +370,7 @@ max-width: 650px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  position: relative;
+   margin-bottom: 130px;
 }
 .testimonials__quote {
   display: flex;
@@ -386,7 +380,6 @@ max-width: 650px;
   align-items: center;
   z-index: 2;
   padding-top: 65px;
-  margin-bottom: 130px;
   margin-right: 15px;
 }
 .testimonials__quote-text {
@@ -394,6 +387,7 @@ max-width: 650px;
   line-height: 1.94;
   color: #fff;
   text-align: center;
+  position: relative;
 }
 .testimonials__quote-text::before {
   content: "Sarah-A";
@@ -401,15 +395,15 @@ max-width: 650px;
   opacity: 0.6;
   font-size: 200px;
   font-weight: 800;
-  ;
   line-height: 0.2;
   letter-spacing: -4px;
   text-align: left;
   color: rgba(82, 25, 5, 0.6);
   z-index: 1;
   position: absolute;
-  left: 180px;
-  top: 23px;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
 }
 .testimonials__quote-cite {
   font-size: 18px;
@@ -427,7 +421,6 @@ padding-right: 2px;
   width: 220px;
   height: 218px;
   z-index: 2;
-  align-self: flex-end;
 }
 .testimonials__arrow-left {
   margin-right: 98px;
@@ -467,7 +460,6 @@ padding-right: 2px;
   content: url(assets/images/line-blog.png);
   width: 687px;
 }
-
 .blog__post-title {
 font-size: 30px;
 font-weight: 800;
@@ -509,7 +501,6 @@ padding-top: 45px;
   display: flex;
   flex-direction: column;
   align-items:center;
-  overflow: overlay;
 }
 .instagram__link {
   display: flex;
@@ -527,6 +518,39 @@ padding-top: 45px;
 }
 .instagram__gallery {
   display: flex;
+  overflow-x: auto;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.instagram__photo {
+  position: relative;
+}
+.instagram__img {
+  height: 100%;
+}
+.instagram__photo::before{
+  content: "";
+  display: block;
+  background-image: url(assets/images/footer-instagram.png);
+  background-repeat: no-repeat;
+  background-size: unset;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+.instagram__photo::after {
+content: "";
+display: block;
+background-image: url(assets/images/shadow.png);
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
 }
 
 .footer__top {
@@ -583,7 +607,6 @@ padding-top: 45px;
   height: 60px;
   padding: 21px 218px 20px 23px;
   border-radius: 30px;
- 
 }
 .footer__input[placeholder] {
   font-size: 17px;
