@@ -42,3 +42,44 @@
   }
 
 }
+
+@media only screen and (max-width: 1024px) {
+  .header__burger-btn {
+    display: block;
+
+  }
+
+  .header__navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    height: 100vh;
+
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+    padding: 30% 0 0;
+
+    background: #0aa566;
+  }
+
+  .header-menu__list {
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .mein-menu__list-item {
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__content {
+    padding-top: 25vh;
+  }
+}
