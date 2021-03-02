@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1700px) {
+  .about__img {
+    width: 85%;
+    left: 2%;
+  }
+
+  .story__content {
+    margin-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .header-menu__list {
+    flex-wrap: wrap;
+    max-width: 55%;
+  }
+
+  .header__personal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__user {
+    margin-bottom: 15px;
+  }
+
+  .header__user::after {
+    display: none;
+  }
+
+  .footer__logo,
+  .footer-box {
+    margin-right: 25px;
+  }
+
+  .footer-box:last-child {
+    margin-right: 0;
+  }
+
+  .footer__btn {
+    right: 7%;
+  }
+
+}
