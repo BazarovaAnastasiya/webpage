@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1700px) {
+  .about__img {
+    width: 85%;
+    left: 2%;
+  }
+
+  .story__content {
+    margin-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .header-menu__list {
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+
+  .header__personal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__user {
+    margin-bottom: 15px;
+  }
+
+  .header__user::after {
+    display: none;
+  }
+
+  .about {
+    justify-content: center;
+  }
+
+  .footer__logo,
+  .footer-box {
+    margin-right: 25px;
+  }
+
+  .footer-box:last-child {
+    margin-right: 0;
+  }
+
+  .footer__btn {
+    right: 7%;
+  }
+
+}
+
+@media only screen and (max-width: 1230px) {
+  .text {
+    font-size: 2rem;
+  }
+
+  .about__img {
+    width: 100%;
+    left: 0;
+    top: -57px;
+  }
+
+  .story__content {
+    flex-basis: 50%;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+
+  .header__burger {
+    z-index: 1;
+
+  }
+
+  .header__burger-btn {
+    display: block;
+  }
+
+  .burger.active .header__burger-btn {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+
+  }
+
+  .burger.active .header__burger-btn::before {
+    top: 0;
+    transform: rotate(45deg);
+    width: 60px;
+  }
+
+  .burger.active .header__burger-btn::after {
+    top: 0;
+    transform: rotate(135deg);
+    width: 60px;
+  }
+
+  .header__navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
+
+    height: 100vh;
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 30% 0 0;
+
+    background: #0aa566;
+
+    transition: none;
+  }
+
+
+  .header-menu__list {
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .mein-menu__list-item {
+    margin: 0;
+    align-self: center;
+  }
+
+  .smoothie {
+    padding: 0 80px;
+  }
+
+  .smoothie__feature {
+    flex-basis: 40%;
+
+  }
+
+  .smoothie__feature:nth-child(-n+6) {
+    border-bottom: 2px solid #f6edde;
+  }
+
+  .smoothie__feature:nth-child(2n) {
+    border-right: none;
+  }
+}
