@@ -103,7 +103,7 @@ body {
   width: 47px;
   height: 2px;
   margin: 3px 41px 16px 33px;
-  background: #ffd68f url(/assets/images/header-line.png);
+  background: #ffd68f url(../assets/images/header-line.png);
 }
 .header__user-link:first-child {
   margin-right: 47px;
