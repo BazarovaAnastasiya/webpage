@@ -41,21 +41,21 @@ body {
   top: 76px;
   right: 42px;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .header__burger.active .header__burger-btn {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .header__burger.active .header__burger-btn::before {
+@media screen and (max-width: 1024px) {
+  .header__burger.active .header__burger-btn.header__burger-btn::before {
     top: 0;
     transform: rotate(45deg);
     width: 60px;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .header__burger.active .header__burger-btn::after {
+  .header__burger.active .header__burger-btn .header__burger-btn::after {
     top: 0;
     transform: rotate(135deg);
     width: 60px;
