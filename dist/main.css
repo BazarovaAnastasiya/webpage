@@ -11,12 +11,6 @@ body {
   font-family: 'Muli', 'Roboto';
   font-size: 10px;
 }
-@media screen and (max-width: 1024px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-}
 .title {
   font-size: 5rem;
   font-weight: 800;
@@ -873,6 +867,10 @@ body {
   background-color: #f2662f;
 }
 @media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 12px;
+  }
   .header__burger-btn {
     display: block;
   }
