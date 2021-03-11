@@ -68,7 +68,7 @@ body {
 .header__burger {
   z-index: 10;
   position: fixed;
-  top: 76px;
+  top: 50px;
   right: 42px;
 }
 .header__burger-btn {
@@ -913,12 +913,12 @@ body {
   .header__burger.active .header__burger-btn::before {
     top: 0;
     transform: rotate(45deg);
-    width: 60px;
+    width: 40px;
   }
   .header__burger.active .header__burger-btn::after {
     top: 0;
     transform: rotate(135deg);
-    width: 60px;
+    width: 40px;
   }
   .header__navbar {
     z-index: 3;
@@ -1059,6 +1059,9 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+  .header__menu-link {
+    font-size: 2rem;
+  }
   .btn {
     padding: 10px 15px;
   }
@@ -1076,6 +1079,12 @@ body {
   }
   .footer__input {
     width: 340px;
+  }
+  .footer__btn {
+    right: 15%;
+  }
+  .footer__btn-arrow {
+    padding: 10px 15px;
   }
 }
 /*# sourceMappingURL=./main.css.map */

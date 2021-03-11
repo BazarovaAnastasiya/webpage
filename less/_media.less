@@ -131,7 +131,6 @@
   .title {
     font-size: 4rem;
   }
-
   .header__burger-btn {
     display: block;
   }
@@ -144,13 +143,13 @@
   .header__burger.active .header__burger-btn::before {
     top: 0;
     transform: rotate(45deg);
-    width: 60px;
+    width: 40px;
   }
 
   .header__burger.active .header__burger-btn::after {
     top: 0;
     transform: rotate(135deg);
-    width: 60px;
+    width: 40px;
   }
 
   .header__navbar {
@@ -310,6 +309,9 @@
   }
 }
 @media screen and (max-width: 650px) {
+  .header__menu-link {
+    font-size: 2rem;
+  }
   .btn {
     padding: 10px 15px;
   }
@@ -327,5 +329,11 @@
   }
   .footer__input {
     width: 340px;
+  }
+  .footer__btn {
+    right: 15%;
+  }
+  .footer__btn-arrow {
+    padding: 10px 15px;
   }
 }
