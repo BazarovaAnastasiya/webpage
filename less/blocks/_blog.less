@@ -13,19 +13,11 @@
     justify-content: center;
 
     padding: 80px 0;
-
-    @media screen and (max-width: 1320px) {
-      padding: 80px 5%;
-    }
   }
 
   &__title {
     align-self: start;
     margin-bottom: 48px;
-
-    @media screen and (max-width: 1320px) {
-      align-self: center;
-    }
   }
 
   &__wrapper {
@@ -44,7 +36,7 @@
   }
 
   &__post::before {
-    content: url(../../assets/images/line-blog.png);
+    content: url(./../assets/images/line-blog.png);
     width: 687px;
   }
 
@@ -71,6 +63,7 @@
 
   &__text {
     padding-top: 25px;
+    padding-left: 25%;
 
     font-weight: 800;
     font-style: italic;
@@ -91,7 +84,7 @@
 
       margin-left: 12px;
 
-      background-image: url(../../assets/images/arrow.png);
+      background-image: url(./../assets/images/arrow.png);
       background-size: cover;
     }
   }

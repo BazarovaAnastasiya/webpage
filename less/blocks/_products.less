@@ -5,7 +5,6 @@
   width: 100%;
   overflow-x: auto;
 
-
   &__product {
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@
 
     padding: 129px 25px 79px;
 
-    color: #ffffff;
+    color: @mainColorText;
 
     &:hover .products__img {
       transform: translateY(-43px) scale(1.2);
@@ -37,10 +36,9 @@
     }
 
     &:last-child {
-        background-color: #c3471b;
-      }
+      background-color: #c3471b;
+    }
   }
-
 
   &__title {
     font-size: 2.4rem;
@@ -61,10 +59,8 @@
     border-radius: 30px;
     border: solid 2px #fff;
 
-    font-size: 21px;
-
     background: transparent;
-    
+
     &::after {
       content: "";
 
@@ -72,13 +68,10 @@
       width: 30px;
       height: 15px;
 
-
       margin-left: 64px;
 
-      background: url(../../assets/images/arrow-white.png) no-repeat;
+      background: url(./../assets/images/arrow-white.png) no-repeat;
       background-size: contain;
-
     }
   }
-
 }
