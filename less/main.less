@@ -1,6 +1,7 @@
 // out: ../dist/main.css, compress: false, sourceMap: true
-@import "./_variables.less";
 @import "./_fonts.less";
+
+@import "./_variables.less";
 
 *:focus {
   outline: 0.5px solid #fff;
@@ -14,10 +15,9 @@ a:hover {
 html,
 body {
   margin: auto;
-  font-family: 'Muli', 'Roboto';
+  font-family: @mainFont, "Roboto";
   font-size: 10px;
 }
-
 
 .title {
   font-size: 5rem;
@@ -28,14 +28,11 @@ body {
   color: #f7ae3b;
 }
 
-
-
 .text {
   font-size: 1.8rem;
   line-height: 2;
   color: #1e1e1e;
 }
-
 
 @import "./blocks/_header.less";
 @import "./blocks/_btn.less";
@@ -49,6 +46,3 @@ body {
 @import "./blocks/_footer.less";
 
 @import "./_media.less";
-
-
-

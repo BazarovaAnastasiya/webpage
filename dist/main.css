@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url(../assets/fonts/Muli-Bold.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url(../assets/fonts/Muli-Italic.ttf);
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Muli';
+  font-family: "MuliBold";
   src: url(../assets/fonts/Muli-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url(../assets/fonts/Muli-BoldItalic.ttf);
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url(../assets/fonts/Muli-ExtraBold.woff);
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf);
   font-weight: 600;
   font-style: italic;
@@ -44,7 +44,7 @@ a:hover {
 html,
 body {
   margin: auto;
-  font-family: 'Muli', 'Roboto';
+  font-family: "Muli", "Roboto";
   font-size: 10px;
 }
 .title {
@@ -797,6 +797,9 @@ body {
   background-color: #f2662f;
 }
 @media screen and (max-width: 1700px) {
+  .header__top {
+    padding: 69px 15px 0;
+  }
   .about__img {
     width: 85%;
     left: 2%;
@@ -808,18 +811,9 @@ body {
 @media screen and (max-width: 1560px) {
   .header__menu-list {
     flex-wrap: wrap;
-    max-width: 70%;
   }
-  .header__personal {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .header__user {
-    margin-bottom: 15px;
-  }
-  .header__user::after {
-    display: none;
+  .header__menu-item {
+    margin-right: 5%;
   }
   .about {
     justify-content: center;
@@ -870,6 +864,11 @@ body {
   }
   .blog__title {
     align-self: center;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .title {
+    text-align: center;
   }
 }
 @media screen and (max-width: 1230px) {
@@ -930,10 +929,19 @@ body {
     height: 100vh;
     display: none;
     flex-direction: column-reverse;
-    justify-content: flex-end;
-    padding: 30% 0 0;
+    flex-wrap: nowrap;
+    justify-content: center;
     background: #0aa566;
     transition: none;
+    overflow: auto;
+  }
+  .header__navbar::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 250px;
+    height: 250px;
+    background: url("../assets/images/logo.svg") no-repeat;
   }
   .header__menu-list {
     flex-wrap: wrap;
@@ -947,9 +955,6 @@ body {
   }
   .header__menu-link {
     font-size: 3rem;
-  }
-  .header__logo {
-    z-index: 9;
   }
   .smoothie__feature {
     flex-basis: 40%;
