@@ -219,7 +219,7 @@ body {
   width: 30px;
   height: 15px;
   margin-left: 55px;
-  background: url(../assets/images/arrow.png) no-repeat;
+  background: url("../assets/images/arrow.png") no-repeat;
   background-size: contain;
 }
 .btn:hover {
@@ -327,7 +327,7 @@ body {
   font-size: 2.1rem;
   line-height: 1;
   list-style: none;
-  list-style-image: url(../assets/images/items-img.png);
+  list-style-image: url("../assets/images/items-img.png");
   color: #fff;
 }
 .about__item--bold {
@@ -443,7 +443,7 @@ body {
   width: 410px;
   height: 301px;
   display: inline-block;
-  background-image: url(../assets/images/dots1.png);
+  background-image: url("../assets/images//dots1.png");
   background-size: cover;
 }
 .testimonials__title {
@@ -544,7 +544,7 @@ body {
   max-width: 687px;
 }
 .blog__post::before {
-  content: url(../assets/images/line-blog.png);
+  content: url("../assets/images/line-blog.png");
   width: 687px;
 }
 .blog__post-title {
@@ -581,7 +581,7 @@ body {
   width: 18px;
   height: 10px;
   margin-left: 12px;
-  background-image: url(../assets/images/arrow.png);
+  background-image: url("../assets/images/arrow.png");
   background-size: cover;
 }
 .instagram {
@@ -622,7 +622,7 @@ body {
   right: 0;
   display: block;
   padding: 25px;
-  background-image: url(../assets/images/footer-instagram.png);
+  background-image: url("../assets/images/footer-instagram.png");
   background-repeat: no-repeat;
   background-size: unset;
 }
@@ -634,7 +634,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/images/shadow.png);
+  background-image: url("../assets/images/shadow.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

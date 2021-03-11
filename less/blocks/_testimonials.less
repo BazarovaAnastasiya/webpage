@@ -12,7 +12,6 @@
 
   background-color: #672f1b;
 
-
   &::before {
     content: "";
 
@@ -24,9 +23,8 @@
 
     display: inline-block;
 
-    background-image: url(./../assets/images/dots1.png);
+    background-image: url("@{img}/dots1.png");
     background-size: cover;
-
   }
 
   &__title {
@@ -87,7 +85,6 @@
 
       color: rgba(82, 25, 5, 0.6);
       opacity: 0.6;
-
     }
   }
 
@@ -98,11 +95,11 @@
     font-style: italic;
 
     color: #f7ae3b;
-    
+
     &::before {
-    content: "-";
-    padding-right: 2px;
-    color: #f7ae3b;
+      content: "-";
+      padding-right: 2px;
+      color: #f7ae3b;
     }
   }
 
