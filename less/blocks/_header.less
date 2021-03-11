@@ -4,7 +4,7 @@
   height: 100vh;
   margin-bottom: 98px;
 
-  background: url(../assets/images/heder-bg.jpg) center;
+  background: url("@{img}heder-bg.jpg") center;
   background-size: cover;
 
   &__burger {
@@ -13,7 +13,6 @@
     top: 76px;
     right: 42px;
   }
-
 
   &__burger-btn {
     z-index: 10;
@@ -46,7 +45,6 @@
     }
   }
 
-
   &__top {
     position: relative;
 
@@ -54,23 +52,18 @@
     padding: 69px 100px 0;
   }
 
-
   &__navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
   }
-
 
   &__menu-list {
     display: flex;
     padding-left: 0;
     list-style: none;
-
   }
-
 
   &__menu-item {
     margin-right: 35px;
@@ -79,8 +72,6 @@
       margin-right: 0;
     }
   }
-
-
 
   &__menu-link {
     display: block;
@@ -94,15 +85,10 @@
 
     color: #fff;
 
-
-
     &:hover {
       transform: scale(1.2);
     }
-
   }
-
-
 
   &__logo {
     position: absolute;
@@ -110,21 +96,16 @@
     top: 60px;
 
     transform: translateX(-50%);
-
   }
-
-
 
   &__personal {
     display: flex;
   }
 
-
   &__user {
     display: flex;
     justify-content: end;
     align-items: center;
-
 
     &::after {
       content: "";
@@ -134,10 +115,9 @@
       height: 2px;
       margin: 3px 41px 16px 33px;
 
-      background: #ffd68f url(../../assets/images/header-line.png);
+      background: #ffd68f url("@{img}header-line.png");
     }
   }
-
 
   &__user-link {
     &:first-child {
@@ -157,7 +137,6 @@
     }
   }
 
-
   &__user-icon--span {
     position: absolute;
     top: -8px;
@@ -176,14 +155,10 @@
     background: #fff;
   }
 
-
-
   &__social {
     display: flex;
-    align-items: center
+    align-items: center;
   }
-
-
 
   &__social-link {
     width: 35px;
@@ -195,7 +170,6 @@
     }
   }
 
-
   &__social-icon {
     border-radius: 50%;
     background-color: #fff;
@@ -206,7 +180,6 @@
     justify-content: center;
   }
 
-
   &__btn {
     padding: 18px 39px;
     font-size: 2.4rem;
@@ -214,5 +187,4 @@
     line-height: 1.67;
     letter-spacing: -0.48px;
   }
-
 }

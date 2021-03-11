@@ -62,7 +62,7 @@ body {
 .header {
   height: 100vh;
   margin-bottom: 98px;
-  background: url(../assets/images/heder-bg.jpg) center;
+  background: url("../assets/images/heder-bg.jpg") center;
   background-size: cover;
 }
 .header__burger {
@@ -150,7 +150,7 @@ body {
   width: 47px;
   height: 2px;
   margin: 3px 41px 16px 33px;
-  background: #ffd68f url(../../assets/images/header-line.png);
+  background: #ffd68f url("../assets/images/header-line.png");
 }
 .header__user-link:first-child {
   margin-right: 47px;
@@ -237,6 +237,7 @@ body {
 }
 .smoothie__title {
   margin: 0 0 40px;
+  text-align: center;
 }
 .smoothie__text {
   max-width: 915px;
@@ -256,7 +257,7 @@ body {
   justify-content: space-between;
   border-right: 2px solid #f6edde;
 }
-.smoothie__feature:nth-child(-n+4) {
+.smoothie__feature:nth-child(-n + 4) {
   border-bottom: 2px solid #f6edde;
 }
 .smoothie__feature:nth-child(4) {
@@ -314,7 +315,7 @@ body {
   display: block;
   width: 450px;
   height: 13px;
-  background: url(../assets/images/line.png) no-repeat;
+  background: url("../assets/images/line.png") no-repeat;
   background-size: cover;
 }
 .about__list {
@@ -393,7 +394,7 @@ body {
   width: 30px;
   height: 15px;
   margin-left: 64px;
-  background: url(../assets/images/arrow-white.png) no-repeat;
+  background: url("../assets/images/arrow-white.png") no-repeat;
   background-size: contain;
 }
 .story {
@@ -420,7 +421,7 @@ body {
   position: relative;
 }
 .story__img-wrap::before {
-  content: url(../assets/images/stamp.png);
+  content: url("../assets/images/stamp.png");
   position: absolute;
   top: 2%;
   left: -30%;
@@ -724,7 +725,7 @@ body {
   letter-spacing: -0.34px;
   text-align: left;
   color: #6d450c;
-  background: #fff url(../assets/images/input-icon.png) no-repeat;
+  background: #fff url("../assets/images/input-icon.png") no-repeat;
   background-position: 25px center;
 }
 .footer__button {
@@ -750,7 +751,7 @@ body {
   display: block;
   width: 48px;
   height: 43px;
-  background-image: url(../assets/images/arrow-footer.png);
+  background-image: url("../assets/images/arrow-footer.png");
   background-size: cover;
 }
 .footer__social {
@@ -891,7 +892,7 @@ body {
 }
 @media screen and (max-width: 1120px) {
   .smoothie {
-    padding: 0 80px;
+    padding: 0 5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -991,13 +992,19 @@ body {
     font-size: 2rem;
   }
   .about__content {
-    padding: 20px 44px 112px;
+    padding: 17px 5% 76px;
   }
   .products__title {
     font-size: 1.8rem;
   }
+  .products__product {
+    padding: 55px 10px 40px;
+  }
   .story__img-wrap::before {
     display: none;
+  }
+  .story__content {
+    padding: 0;
   }
   .story__img-wrap,
   .blog__picture {
@@ -1012,6 +1019,9 @@ body {
   }
   .blog__post::before {
     display: none;
+  }
+  .blog__text {
+    padding-left: 0;
   }
   .btn {
     font-size: 2rem;
@@ -1031,6 +1041,9 @@ body {
   .blog__post-title {
     font-size: 2rem;
   }
+  .instagram__photo {
+    min-width: 70%;
+  }
   .footer__box {
     flex-basis: 55%;
     margin-bottom: 55px;
@@ -1038,13 +1051,19 @@ body {
   .footer__title {
     align-self: center;
   }
+  .footer__button {
+    font-size: 1.5rem;
+  }
+  .footer__btn {
+    right: 10%;
+  }
 }
 @media screen and (max-width: 650px) {
   .btn {
     padding: 10px 15px;
   }
   .smoothie__feature-image {
-    width: 58%;
+    width: 30%;
   }
   .smoothie__feature-title {
     font-size: 1.5rem;
