@@ -17,11 +17,3 @@ $(function(){
   });
 
 });
-
-// const bth = document.querySelector('.header__burger')
-// const navbar = document.querySelector('.header__navbar')
-// console.log(bth);
-
-// bth.onclick = function(){
-//   navbar.classList.toggle("active")
-// }
