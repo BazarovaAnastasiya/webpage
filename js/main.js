@@ -13,7 +13,17 @@ $(function(){
       $(this).css('display', 'flex');
       }
       });
-
   });
+});
+$(function() {
+    $('.header__menu-link').on('click',function() {
+        $('.burger').removeClass('active');
 
+      
+    $('.header__navbar').slideToggle(200, "linear",function(){
+      if($(this).css('display') === "flex"){
+      $(this).css('display', 'none');
+      }
+      });
+    });
 });
