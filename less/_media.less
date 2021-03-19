@@ -36,9 +36,7 @@
     right: 8%;
   }
   .footer__social {
-    position: absolute;
-    right: 85px;
-    bottom: 25px;
+    transform: translate(-89px, 25px);
   }
 }
 
@@ -55,7 +53,10 @@
 }
 
 @media screen and (max-width: 1320px) {
-  .header,
+  .header {
+    padding-top: 50%;
+    margin-bottom: 0;
+  }
   .smoothie,
   .about,
   .story,
@@ -173,16 +174,18 @@
 
     transition: none;
     overflow: auto;
-    &::before {
+    &::after {
       content: "";
-      position: absolute;
-      top: 31px;
-      left: 50%;
-      transform: translateX(-50%);
+
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      margin-bottom: 65px;
 
       width: 250px;
       height: 180px;
-      background: url("@{img}logo.svg") no-repeat;
+      background: url("@{img}logo.svg") no-repeat center;
     }
   }
 
@@ -350,10 +353,7 @@
     margin: 0px 20px 10px 0;
     align-self: center;
   }
-  .footer__social {
-    right: 102px;
-    bottom: -15px;
-  }
+
   .footer__button {
     font-size: 1.5rem;
   }
@@ -388,9 +388,6 @@
 
   .footer__input {
     width: 400px;
-  }
-  .footer__social {
-    bottom: -3%;
   }
 }
 @media screen and (max-width: 500px) {

@@ -703,6 +703,7 @@ body {
   flex-direction: column;
 }
 .footer__form {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -760,8 +761,9 @@ body {
 }
 .footer__social {
   position: absolute;
-  right: 23px;
-  bottom: 25%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-20px, -26px);
 }
 .footer__social-link {
   margin-right: 20px;
@@ -833,9 +835,7 @@ body {
     right: 8%;
   }
   .footer__social {
-    position: absolute;
-    right: 85px;
-    bottom: 25px;
+    transform: translate(-89px, 25px);
   }
 }
 @media screen and (max-width: 1440px) {
@@ -850,7 +850,10 @@ body {
   }
 }
 @media screen and (max-width: 1320px) {
-  .header,
+  .header {
+    padding-top: 50%;
+    margin-bottom: 0;
+  }
   .smoothie,
   .about,
   .story,
@@ -950,15 +953,16 @@ body {
     transition: none;
     overflow: auto;
   }
-  .header__navbar::before {
+  .header__navbar::after {
     content: "";
-    position: absolute;
-    top: 31px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-bottom: 65px;
     width: 250px;
     height: 180px;
-    background: url("../assets/images/logo.svg") no-repeat;
+    background: url("../assets/images/logo.svg") no-repeat center;
   }
   .header__personal {
     flex-direction: column;
@@ -1112,10 +1116,6 @@ body {
     margin: 0px 20px 10px 0;
     align-self: center;
   }
-  .footer__social {
-    right: 102px;
-    bottom: -15px;
-  }
   .footer__button {
     font-size: 1.5rem;
   }
@@ -1149,9 +1149,6 @@ body {
   }
   .footer__input {
     width: 400px;
-  }
-  .footer__social {
-    bottom: -3%;
   }
 }
 @media screen and (max-width: 500px) {
