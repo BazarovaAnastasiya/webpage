@@ -74,7 +74,7 @@
   }
 
   &__menu-link {
-    display: block;
+    display: inline-block;
 
     font-size: 1.6rem;
     font-weight: bold;
@@ -84,9 +84,20 @@
     text-decoration: none;
 
     color: @mainColor;
+    &::after {
+      display: block; /*превращаем его в блочный элемент*/
+      content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+      height: 3px; /*задаём высоту линии*/
+      width: 0%; /*задаём начальную ширину элемента (линии)*/
+      background-color: #fff45d; /*цвет фона элемента*/
+      transition: width 1s ease-in-out;
+    }
 
     &:hover {
       transform: scale(1.2);
+    }
+    &:hover::after {
+      width: 100%;
     }
   }
 

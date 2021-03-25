@@ -118,7 +118,7 @@ body {
   margin-right: 0;
 }
 .header__menu-link {
-  display: block;
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 2.5;
@@ -127,8 +127,24 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.header__menu-link::after {
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 3px;
+  /*задаём высоту линии*/
+  width: 0%;
+  /*задаём начальную ширину элемента (линии)*/
+  background-color: #fff45d;
+  /*цвет фона элемента*/
+  transition: width 1s ease-in-out;
+}
 .header__menu-link:hover {
   transform: scale(1.2);
+}
+.header__menu-link:hover::after {
+  width: 100%;
 }
 .header__logo {
   position: absolute;
