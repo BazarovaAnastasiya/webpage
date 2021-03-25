@@ -1,3 +1,3 @@
 # webpage (landing) about smoothies
 
-![](assets\images\smoothiewebpage.jpg)
+![](https://github.com/BazarovaAnastasiya/webpage/blob/main/assets/images/smoothiewebpage.jpg)
