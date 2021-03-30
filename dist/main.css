@@ -866,10 +866,6 @@ body {
   }
 }
 @media screen and (max-width: 1320px) {
-  .header {
-    padding-top: 50%;
-    margin-bottom: 0;
-  }
   .smoothie,
   .about,
   .story,
@@ -935,6 +931,9 @@ body {
   }
   .title {
     font-size: 4rem;
+  }
+  .header__top {
+    padding: 220px 15px 0;
   }
   .header__burger-btn {
     display: block;
