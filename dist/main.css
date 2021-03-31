@@ -146,6 +146,12 @@ body {
 .header__menu-link:hover::after {
   width: 100%;
 }
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+}
 .header__personal {
   display: flex;
 }
