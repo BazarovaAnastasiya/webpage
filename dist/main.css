@@ -506,7 +506,7 @@ body {
 }
 .testimonials__quote-text::before {
   content: "Sarah-A";
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   left: 50%;
   top: -50%;
