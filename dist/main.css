@@ -59,6 +59,34 @@ body {
   line-height: 2;
   color: #1e1e1e;
 }
+.btn {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  border-radius: 35px;
+  color: #fff;
+  background-color: #0aa566;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  margin-left: 55px;
+  background: url("../assets/images/arrow.png") no-repeat;
+  background-size: contain;
+}
+.btn:hover {
+  border: 2px solid #00ffff83;
+  transition: 0.2s linear;
+}
+.btn:hover::after {
+  transform: scale(1.5);
+}
+.logo .logo__image {
+  width: 210px;
+}
 .header {
   min-height: 100vh;
   margin-bottom: 98px;
@@ -98,7 +126,7 @@ body {
 .header__top {
   position: relative;
   margin-bottom: 105px;
-  padding: 69px 100px 0;
+  padding: 75px 100px 0;
 }
 .header__navbar {
   display: flex;
@@ -159,6 +187,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-right: 60px;
 }
 .header__user::after {
   content: "";
@@ -224,31 +253,6 @@ body {
 }
 .header__btn:hover {
   background-color: #ec5;
-}
-.btn {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1;
-  text-align: center;
-  border-radius: 35px;
-  color: #fff;
-  background-color: #0aa566;
-}
-.btn::after {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 15px;
-  margin-left: 55px;
-  background: url("../assets/images/arrow.png") no-repeat;
-  background-size: contain;
-}
-.btn:hover {
-  border: 2px solid #00ffff83;
-  transition: 0.2s linear;
-}
-.btn:hover::after {
-  transform: scale(1.5);
 }
 .smoothie {
   display: flex;
@@ -407,7 +411,7 @@ body {
   line-height: 1;
 }
 .products__btn {
-  padding: 9px 35px;
+  padding: 20px 35px;
   border-radius: 30px;
   border: solid 2px #fff;
   background: transparent;
@@ -720,6 +724,8 @@ body {
 .footer__payment-icon {
   margin: 0 16px 27px 0;
   align-self: center;
+  max-width: 50px;
+  object-fit: cover;
 }
 .footer__contact {
   position: relative;
