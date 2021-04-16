@@ -35,7 +35,7 @@
   font-style: italic;
 }
 *:focus {
-  outline: 0px;
+  outline: 1px solid transparent;
 }
 a:hover {
   opacity: 0.8;
