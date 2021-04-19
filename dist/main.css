@@ -85,7 +85,7 @@ body {
   transform: scale(1.5);
 }
 .logo .logo__image {
-  width: 210px;
+  width: 21rem;
 }
 .header {
   min-height: 100vh;
